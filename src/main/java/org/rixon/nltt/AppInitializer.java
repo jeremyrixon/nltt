@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  
 public class AppInitializer implements WebApplicationInitializer {
  
-    private static final String CONFIG_LOCATION = "org.rixon.nltt";
+    private static final String CONFIG_LOCATION = "org.rixon.nltt.config";
     private final static Logger log = Logger.getLogger(AppInitializer.class.getName()); 
  
     @Override
