@@ -26,7 +26,7 @@ public class AppInitializer implements WebApplicationInitializer {
  
         // Add the servlet mapping manually and make it initialize automatically
         DispatcherServlet dispatcherServlet = new DispatcherServlet(applicationContext);
-        ServletRegistration.Dynamic servlet = servletContext.addServlet("mvc-dispatcher", dispatcherServlet);
+        ServletRegistration.Dynamic servlet = servletContext.addServlet("DispatcherServlet", dispatcherServlet);
  
         servlet.addMapping("/");
         servlet.setAsyncSupported(true);
