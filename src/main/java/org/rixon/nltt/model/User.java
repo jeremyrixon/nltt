@@ -2,17 +2,18 @@ package org.rixon.nltt.model;
 
 public class User {
 
-	Integer id;
-	String name;
-	String email;
+	private Integer id;
+	private String name;
+	private String phone;
+	private String email;
 	
 	public User() {
 	}
 	
-	public User(Integer id, String name, String email) {
-		super();
+	public User(Integer id, String name, String phone, String email) {
 		this.id = id;
 		this.name = name;
+		this.setPhone(phone);
 		this.email = email;
 	}
 
@@ -31,6 +32,14 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 
 	public String getEmail() {
 		return email;
@@ -42,7 +51,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + "]";
+		return "User [id=" + id + ", name=" + name + ", phone=" + phone + ", email=" + email + "]";
 	}
 
 }

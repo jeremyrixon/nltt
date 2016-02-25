@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 public class FreeMarkerViewResolver extends org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver {
 	
 	public FreeMarkerViewResolver() {
-		// setCache(true); // Leave off while developing
+		setCache(true);
 		setPrefix("/");
 		setSuffix(".ftl");
 	}

@@ -19,6 +19,7 @@
 		<maven-war-plugin.version>2.6</maven-war-plugin.version>
 		<jdbi.version>2.71</jdbi.version>
 		<junit.version>4.12</junit.version>
+		<jackson-jaxrs-base.version>2.6.5</jackson-jaxrs-base.version>
 	</properties>
 	<build>
 		<plugins>
@@ -86,6 +87,11 @@
 			<groupId>org.jdbi</groupId>
 			<artifactId>jdbi</artifactId>
 			<version>${jdbi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-base</artifactId>
+			<version>${jackson-jaxrs-base.version}</version>
 		</dependency>
 	</dependencies>
 </project> 
