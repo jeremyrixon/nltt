@@ -1,4 +1,4 @@
---DROP TABLE people IF EXISTS;
+DROP TABLE people IF EXISTS;
 
 CREATE TABLE people (
   id    INTEGER PRIMARY KEY,
@@ -7,7 +7,7 @@ CREATE TABLE people (
   email VARCHAR(50)
 );
 
---DROP TABLE books IF EXISTS;
+DROP TABLE books IF EXISTS;
 
 CREATE TABLE books (
   id     INTEGER PRIMARY KEY,
@@ -16,7 +16,7 @@ CREATE TABLE books (
   ISBN   VARCHAR(50)
 );
 
---DROP TABLE loans IF EXISTS;
+DROP TABLE loans IF EXISTS;
 
 CREATE TABLE loans (
   id       INTEGER PRIMARY KEY,

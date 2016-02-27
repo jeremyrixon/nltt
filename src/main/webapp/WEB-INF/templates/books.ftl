@@ -8,7 +8,7 @@
     <div class="jumbotron">
       <div class="container">
         <h2>Books</h2>
-        <p>A list of books is below. </p>
+        <p>A list of books is below. Is your favourite book here?</p>
       </div>
     </div>
     <div class="container" role="main">
@@ -16,14 +16,12 @@
 		  <br/>
 		  <table class="table">
 		    <tr>
-		        <th>Id</th>
 				<th>Title</th>
 				<th>Author</th>
 				<th>ISBN</th>
 		    </tr>
 		    <#list model["bookList"] as book>
 		    <tr>
-		        <td>${book.id}</td>
 		        <td>${book.title}</td>
 		        <td>${book.author}</td>
 		        <td>${book.ISBN}</td>
