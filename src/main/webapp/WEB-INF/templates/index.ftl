@@ -2,11 +2,9 @@
 <body>
 <!DOCTYPE html>
 <html lang="en">
-  <#include "shared/head.ftl">
-  <body>
+ <#include "shared/head.ftl">
+ <body>
   <#include "shared/navbar.ftl">
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h2>NLTT</h2>
@@ -14,9 +12,8 @@
       </div>
     </div>
     <div class="container" role="main">
-
 	</div> 
     </div><!-- /.container -->
-  <#include "shared/navbar.ftl">
-</body>
+    <#include "shared/footer.ftl">
+ </body>
 </html>

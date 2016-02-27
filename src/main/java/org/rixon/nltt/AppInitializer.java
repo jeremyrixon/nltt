@@ -17,8 +17,16 @@ public class AppInitializer implements WebApplicationInitializer {
  
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
- 
-        log.info("Initializing Application for " + servletContext.getServerInfo());
+    	
+    	StringBuilder sb = new StringBuilder();
+    	sb.append("\n\n\n");
+    	sb.append("**********************************************************************\n");
+    	sb.append("*                                                                    *\n");
+    	sb.append("* http://localhost:8080/                                             *\n");
+    	sb.append("*                                                                    *\n");
+    	sb.append("**********************************************************************\n");
+    	sb.append("\n\n\n");
+        log.info(sb.toString());
  
         // Create ApplicationContext
         AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();

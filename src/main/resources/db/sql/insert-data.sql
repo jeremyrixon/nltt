@@ -1,7 +1,7 @@
-INSERT INTO users VALUES (1, 'Jeremy Rixon',     '0407681729',      'jeremy@rixon.org');
-INSERT INTO users VALUES (2, 'Bill Gates',       '1-800-MICROSOFT', 'bill@microsoft.com');
-INSERT INTO users VALUES (3, 'Malcolm Turnbull', '1800 GOVERNMENT', 'malcolm@gov.au');
-INSERT INTO users VALUES (4, 'Charles Darwin',   '1800 EVOLVED',    'charles@galapagos.com');
+INSERT INTO people VALUES (1, 'Jeremy Rixon',     '0407681729',      'jeremy@rixon.org');
+INSERT INTO people VALUES (2, 'Bill Gates',       '1-800-MICROSOFT', 'bill@microsoft.com');
+INSERT INTO people VALUES (3, 'Malcolm Turnbull', '1800 GOVERNMENT', 'malcolm@gov.au');
+INSERT INTO people VALUES (4, 'Charles Darwin',   '1800 EVOLVED',    'charles@galapagos.com');
 
 INSERT INTO books VALUES (1, 'National Library of Australia : history and collections', 'Kenny, Janice', '0642993130');
 INSERT INTO books VALUES (2, 'James Rixon and Amelia Goodwin : more a forest than a family tree, a record of their family line / collected by Joye Walsh', 'Walsh, Joye', '0958555605');

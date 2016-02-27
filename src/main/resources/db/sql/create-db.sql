@@ -1,6 +1,6 @@
---DROP TABLE users IF EXISTS;
+--DROP TABLE people IF EXISTS;
 
-CREATE TABLE users (
+CREATE TABLE people (
   id    INTEGER PRIMARY KEY,
   name  VARCHAR(50),
   phone VARCHAR(50),
@@ -19,7 +19,7 @@ CREATE TABLE books (
 --DROP TABLE loans IF EXISTS;
 
 CREATE TABLE loans (
-  id     INTEGER PRIMARY KEY,
-  userid INTEGER,
-  bookid INTEGER
+  id       INTEGER PRIMARY KEY,
+  personid INTEGER,
+  bookid   INTEGER
 );

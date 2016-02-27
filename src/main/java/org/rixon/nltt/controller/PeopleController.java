@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import org.rixon.nltt.dao.UserDao;
-import org.rixon.nltt.model.User;
+import org.rixon.nltt.dao.PersonDao;
+import org.rixon.nltt.model.Person;
 import org.skife.jdbi.v2.DBI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,10 +25,10 @@ public class PeopleController {
  
     	DBI dbi = new DBI(dataSource);
 
-    	UserDao userDao = dbi.open(UserDao.class);
-    	List<User> users = userDao.findAll();
-    	userDao.close();
-    	model.addAttribute("userList", users);
+    	PersonDao personDao = dbi.open(PersonDao.class);
+    	List<Person> persons = personDao.findAll();
+    	personDao.close();
+    	model.addAttribute("personList", persons);
  
     	return "people";
     }

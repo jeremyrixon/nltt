@@ -13,6 +13,14 @@
   width: 33%;
 }
 
+/* The list of books that appears inline on the people page */
+.booklist th {
+  background-color: #eeeeee;
+}
+
+.booklist td {
+  background-color: #f5f5f5;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */

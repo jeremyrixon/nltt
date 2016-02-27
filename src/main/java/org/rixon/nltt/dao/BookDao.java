@@ -11,11 +11,11 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 public interface BookDao
 {
   @SqlQuery("select b.id, b.title, b.author, b.ISBN "
-  		+ " from users u "
-		+ " join loans l on l.userid = u.id "
+  		+ " from people p "
+		+ " join loans l on l.personid = p.id "
   		+ " join books b on b.id = l.bookid "
-		+ " where u.id = :userid")
-  List<Book> findByUser(@Bind("userid") int userid);
+		+ " where p.id = :personid")
+  List<Book> findByPerson(@Bind("personid") int personid);
 	
   @SqlQuery("select id, title, author, ISBN from books")
   List<Book> findAll();

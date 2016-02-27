@@ -1,13 +1,9 @@
 package org.rixon.nltt.config.db;
 
-import java.sql.SQLException;
-
 import javax.sql.DataSource;
 
-import org.h2.tools.Server;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
@@ -27,11 +23,4 @@ public class H2DataSource {
 		return db;
 
 	}
-
-	// Start WebServer, access http://localhost:8082
-	@Bean(initMethod = "start", destroyMethod = "stop")
-	public Server startDBManager() throws SQLException {
-		return Server.createWebServer();
-	}
-
 }

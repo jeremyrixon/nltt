@@ -17,13 +17,13 @@ public class BookRestController {
 	@Autowired
 	private DataSource dataSource;
 
-    @RequestMapping("/user/{userid}/books")
-    public List<Book> booksForUser(@PathVariable(value="userid") int userid) {
+    @RequestMapping("/person/{id}/books")
+    public List<Book> booksForPerson(@PathVariable(value="id") int id) {
     	
     	DBI dbi = new DBI(dataSource);
 
     	BookDao bookDao = dbi.open(BookDao.class);
-    	List<Book> books = bookDao.findByUser(userid);
+    	List<Book> books = bookDao.findByPerson(id);
     	bookDao.close();
     	
         return books;
