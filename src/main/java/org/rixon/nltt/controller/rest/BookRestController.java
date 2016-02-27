@@ -17,7 +17,7 @@ public class BookRestController {
 	@Autowired
 	private DataSource dataSource;
 
-    @RequestMapping("/users/{userid}/books")
+    @RequestMapping("/user/{userid}/books")
     public List<Book> booksForUser(@PathVariable(value="userid") int userid) {
     	
     	DBI dbi = new DBI(dataSource);

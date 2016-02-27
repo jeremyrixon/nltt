@@ -12,28 +12,25 @@
       </div>
     </div>
     <div class="container" role="main">
-		<div id="users">
+	   <div>
 		  <br/>
-		  <table class="table">
+		  <table id="users" class="table table-hover people">
 		    <tr>
-		        <th>Id</th>
 				<th>Name</th>
 				<th>Phone</th>
 				<th>Email</th>
 		    </tr>
 		    <#list model["userList"] as user>
-		    <tr>
-		        <td>${user.id}</td>
+		    <tr id=${user.id}>
 		        <td>${user.name}</td>
 		        <td>${user.phone}</td>
 		        <td>${user.email}</td>
 		    </tr>
 		    </#list>
 		  </table>
-	</div> 
-    </div><!-- /.container -->
-  <#include "shared/navbar.ftl">
+	   </div> 
+    </div>
+    <#include "shared/footer.ftl">
+    <script src="/resources/js/people-table.js"></script>
   </body>
 </html>
-<html>
-<body>

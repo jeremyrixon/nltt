@@ -32,7 +32,7 @@
 		  </table>
 	</div> 
     </div><!-- /.container -->
-  <#include "shared/navbar.ftl">
+  <#include "shared/footer.ftl">
   </body>
 </html>
 <html>
