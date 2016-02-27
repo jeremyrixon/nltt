@@ -10,7 +10,7 @@
         <h2>People</h2>
         <p>A list of people is below.</p>
         <p>You can click on a person to see a list of books they currently have.</p>
-        <p>Click the person again to remove the list of books</p>
+        <p>Click again to hide the list.</p>
       </div>
     </div>
     <div class="container" role="main">
