@@ -14,10 +14,11 @@ public interface BookDao
   		+ " from people p "
 		+ " join loans l on l.personid = p.id "
   		+ " join books b on b.id = l.bookid "
-		+ " where p.id = :personid")
+		+ " where p.id = :personid "
+  		+ " order by b.author, b.ISBN")
   List<Book> findByPerson(@Bind("personid") int personid);
 	
-  @SqlQuery("select id, title, author, ISBN from books")
+  @SqlQuery("select id, title, author, ISBN from books order by author, ISBN")
   List<Book> findAll();
 
   void close();

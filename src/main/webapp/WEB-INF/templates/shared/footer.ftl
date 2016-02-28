@@ -7,12 +7,6 @@
         	<a href="http://jquery.com">jQuery</a>,
         	<a href="http://jdbi.org">JDBI</a> and 
         	<a href="http://h2database.com">H2</a>.
-        	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        	Jeremy Rixon 
-        	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        	<a href="mailto:jeremy@rixon.org">jeremy@rixon.org</a>
-        	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        	0407 681 729 
         </p>
       </div>
     </footer>
